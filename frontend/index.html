@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N8N RAG Chat - Ask Questions About N8N Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="app-title">🤖 N8N RAG Chat</h1>
+                <p class="app-subtitle">Get instant answers from N8N documentation</p>
+                <button id="clear-chat-btn" class="clear-btn" title="Clear conversation">
+                    🗑️ Clear Chat
+                </button>
+            </div>
+        </header>
+
+        <main class="main">
+            <div id="chat-window" class="chat-window">
+                <div id="messages" class="messages">
+                    <!-- Messages will appear here -->
+                </div>
+                <div id="typing-indicator" class="typing-indicator" style="display: none;">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+            <form id="message-form" class="message-form">
+                <div class="input-container">
+                    <input
+                        type="text"
+                        id="message-input"
+                        placeholder="Ask a question about N8N..."
+                        required
+                        autocomplete="off"
+                    >
+                    <button type="submit" id="send-btn" class="send-btn" disabled>
+                        <span class="send-icon">🚀</span> Send
+                    </button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
