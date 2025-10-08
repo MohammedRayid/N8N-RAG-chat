@@ -2,7 +2,7 @@
 
 A beautiful chat interface for querying N8N documentation using Retrieval-Augmented Generation (RAG). Ask questions about N8N workflows, nodes, integrations, and get instant explanations powered by local AI.
 
-![Chat Interface](https://via.placeholder.com/800x400/121212/ff6600?text=N8N+RAG+Chat+Interface)
+![Chat Interface](VectorDB-Data/n8nRagChat.png)
 
 ## 🌟 Features
 
